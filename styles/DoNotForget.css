@@ -1,0 +1,14 @@
+.dnf-container {
+  padding: 20px 100px;
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .dnf-container {
+    padding: 20px 40px;
+  }
+
+  .dnf-textarea {
+    font-size: 1.1em;
+    color: pink;
+  }
+}

@@ -1,0 +1,37 @@
+.ep-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+  padding: 20px;
+  max-width: 400px;
+  margin: 200px auto;
+}
+
+.ep-container h2 {
+  font-size: 50px;
+  margin: 0;
+}
+
+.ep-container input {
+  width: 200px;
+  height: 40px;
+  border-radius: 20px;
+  border-color: palevioletred;
+  background-color: white;
+  padding: 4px 12px;
+  font-size: 1em;
+  box-sizing: border-box;
+}
+
+.ep-container button {
+  width: 80px;
+  padding: 8px 0;
+  border-radius: 20px;
+  border: none;
+  background-color: #b64d90;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}

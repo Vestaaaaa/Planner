@@ -1,0 +1,80 @@
+.title-notes {
+  text-align: center;
+  font-size: 40px;
+  position: relative;
+  left: 180px;
+}
+
+.buttons-container {
+  display: flex;
+  width: 810px;
+  height: 810px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  padding: 30px;
+  position: absolute;
+}
+
+.main-buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 18px 0;
+  width: 450px;
+  background-color: #f9cee7;
+  padding: 30px;
+  border-radius: 11px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  gap: 15px;
+}
+
+.main-buttons:hover {
+  background-color: #f7c1e0;
+}
+
+.hp-btn-text {
+  font-size: 27px;
+}
+
+@media (max-width: 768px) {
+  .title-notes {
+    font-size: 28px;
+    padding: 0 10px;
+  }
+
+  .buttons-container {
+    width: 100%;
+    height: auto;
+    padding: 15px 10px;
+  }
+
+  .main-buttons {
+    flex-direction: column;
+    width: 100%;
+    padding: 20px;
+    font-size: 1rem;
+  }
+
+  .hp-btn-text {
+    font-size: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .buttons-container {
+    width: 720px;
+    padding: 20px;
+  }
+
+  .main-buttons {
+    width: 400px;
+    font-size: 1.1rem;
+  }
+
+  .hp-btn-text {
+    font-size: 24px;
+  }
+}

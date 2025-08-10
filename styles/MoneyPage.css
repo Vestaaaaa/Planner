@@ -1,0 +1,44 @@
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.grid-months {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+  margin-top: 16px;
+}
+
+.money-month {
+  background-color: #ffcce5;
+  padding: 16px 0;
+  border-radius: 9px;
+  text-align: center;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .grid-months {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+  }
+
+  .money-month {
+    padding: 12px 0;
+    font-size: 1.1em;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .grid-months {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 14px;
+  }
+
+  .money-month {
+    font-size: 1.2em;
+  }
+}

@@ -1,0 +1,110 @@
+.notes-widget {
+  background: #f9cee7;
+  border-radius: 20px;
+  padding: 15px;
+  margin: 75px 130px 0px 0px;
+  min-height: 320px;
+  max-height: 400px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  right: -60px;
+  top: 80px;
+  width: 600px;
+}
+
+.notes-header {
+  font-weight: bold;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notes-header span {
+  font-size: 20px;
+}
+
+.pen-img {
+  width: 30px;
+  height: 30px;
+}
+
+.plus-img {
+  width: 30px;
+  height: 30px;
+}
+
+.notes-list {
+  margin-top: 10px;
+  flex: 1;
+  overflow-y: auto;
+  max-height: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.note-item {
+  background: #f4b8da;
+  border-radius: 10px;
+  padding: 10px 15px;
+  cursor: pointer;
+  font-size: 17px;
+  font-weight: 600;
+  transition: background 0.2s;
+}
+.note-item:hover {
+  background: #f4b8da;
+}
+
+.notes-overlay {
+  position: fixed;
+  z-index: 100;
+  left: 0;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(80, 20, 80, 0.09);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.notes-modal {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 20px #d46abf;
+  padding: 24px 32px;
+  min-width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+h3 {
+  color: #9a1680;
+  font-family: "Open Sans", sans-serif;
+}
+
+.notes-modal input {
+  height: 30px;
+  width: 250px;
+  padding: 0px 0px 0px 10px;
+  font-family: "Open Sans", sans-serif;
+  border-radius: 20px;
+}
+
+.notes-modal-actions {
+  display: flex;
+  gap: 16px;
+  justify-content: flex-start;
+}
+
+.notes-modal-actions button {
+  border-radius: 20px;
+  background-color: #f4b8da;
+  font-family: "Open Sans", sans-serif;
+  height: 25px;
+  text-align: center;
+}
