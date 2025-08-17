@@ -17,21 +17,16 @@ function savePassword(password: string) {
 function createNav(): HTMLElement {
   const nav = document.createElement("nav");
   const pages = [
-    { path: "/", label: "./assets/btn-home.png", class: "home-img" },
+    { path: "/", label: "/assets/btn-home.png", class: "home-img" },
     {
       path: "/daily-planner",
-      label: "./assets/smal-paw.png",
+      label: "/assets/smal-paw.png",
       class: "paw-img",
     },
     {
       path: "/do-not-forget",
-      label: "./assets/btn-donotforget.png",
+      label: "/assets/btn-donotforget.png",
       class: "dnf-img",
-    },
-    {
-      path: "/money",
-      label: "/assets/btn-moneyPig.png",
-      class: "moneyPig-img",
     },
   ];
 
@@ -110,9 +105,6 @@ function render() {
         break;
       case "/do-not-forget":
         pageContent = createDoNotForget();
-        break;
-      case "/money":
-        pageContent = createMoneyPage();
         break;
       default:
         pageContent = document.createElement("div");

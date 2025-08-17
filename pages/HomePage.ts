@@ -21,7 +21,6 @@ export function createHomePage(): HTMLElement {
       icon: "../assets/paper-clip.png",
       path: "/do-not-forget",
     },
-    { text: "Money", icon: "../assets/money-pig.png", path: "/money" },
   ];
 
   div.appendChild(title);
